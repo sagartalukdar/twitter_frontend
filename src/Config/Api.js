@@ -3,7 +3,9 @@ import { useEffect } from "react";
 import { useSelector } from "react-redux";
 
 
-export const api_base_url="http://localhost:8080";
+// export const api_base_url="http://localhost:8080";
+
+ export const api_base_url="https://twitterbackend-production-ab64.up.railway.app";
 
 // const jwt=localStorage.getItem("jwt");
 
