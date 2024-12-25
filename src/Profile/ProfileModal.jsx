@@ -73,7 +73,7 @@ const ProfileModal = ({openProfileModal,handleCloseProfileModal}) => {
         const {name}=e.target;
         const file=e.target.files[0];
         if(file){
-            const imgUrl=await uploadToCloudinary(file);
+            const imgUrl=await uploadToCloudinary(file,"image");
             // const imgUrl= URL.createObjectURL(file);
             formik.setFieldValue(name,imgUrl);
             if(name==="image"){
